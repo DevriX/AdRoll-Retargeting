@@ -5,7 +5,7 @@
 * Description:         AdRoll is the most effective retargeting platform in the world. This plugin easily integrates your AdRoll code across your WordPress site.
 * Author:              nofearinc
 * Author URI:          http://devwp.eu
-* Version: 			   1.1
+* Version: 			   1.1.1
 */
 
 class WP_AdRoll {

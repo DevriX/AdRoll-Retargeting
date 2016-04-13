@@ -2,8 +2,8 @@
 Contributors: nofearinc
 Tags: adroll, retargeting, ads
 Requires at least: 3.0
-Tested up to: 4.4
-Stable tag: 1.1
+Tested up to: 4.5
+Stable tag: 1.1.1
 License: GPLv2
 
 AdRoll is the most effective retargeting platform in the world. 
@@ -21,6 +21,9 @@ AdRoll is the most effective retargeting platform in the world. This plugin easi
 * Your script is going to be embedded to your footer
 
 == Changelog ==
+
+= 1.1.1 =
+* Fix the PHP Illegal string offset notice
 
 = 1.1 =
 * Minor bump for 4.4
