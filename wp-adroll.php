@@ -66,17 +66,20 @@ class WP_AdRoll {
 	// define settings field adv_id
 	public function adrl_adv_id_callback() {
 		$val = get_option('adrl_setting', '');
-		$val = $val['adrl_adv_id'];
-		
-		echo '<div><input type="text" id="adrl_adv_id" name="adrl_setting[adrl_adv_id]" value="'.$val.'" /></div>';
+		if ( ! empty( $val['adrl_adv_id'] ) ) {
+			$val = $val['adrl_adv_id'];
+		}
+		echo '<div><input type="text" id="adrl_adv_id" name="adrl_setting[adrl_adv_id]" value="'. $val .'" /></div>';
 	}
 	
 	// define settings field pix_id
 	public function adrl_pix_id_callback() {
 		$val = get_option('adrl_setting', '');
-		$val = $val['adrl_pix_id'];
+		if ( ! empty( $val['adrl_pix_id'] ) ) {
+			$val = $val['adrl_pix_id'];
+		}
 		
-		echo '<div><input type="text" id="adrl_pix_id" name="adrl_setting[adrl_pix_id]" value="'.$val.'" /></div>';
+		echo '<div><input type="text" id="adrl_pix_id" name="adrl_setting[adrl_pix_id]" value="'. $val .'" /></div>';
 	}
 	
 	// call the page template here
